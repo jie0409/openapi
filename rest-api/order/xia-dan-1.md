@@ -4,11 +4,13 @@ description: 下单
 
 # 下单1
 
-{% swagger method="post" path="" baseUrl="/api/v1/trade/order" summary="Create a new order" %}
-{% swagger-description %}
 类型：PRIVATE
 
 权限：TRADE
+
+{% swagger method="post" path="" baseUrl="/api/v1/trade/order" summary="Create a new order" %}
+{% swagger-description %}
+
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="symbol" required="true" type="string" %}
