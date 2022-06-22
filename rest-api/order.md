@@ -1,6 +1,6 @@
-# Page 5
+# ORDER
 
-{% swagger method="get" path="" baseUrl="/api/v1/trade" summary="" %}
+{% swagger method="get" path="/order" baseUrl="/api/v1/trade" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
