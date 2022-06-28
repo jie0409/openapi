@@ -1,6 +1,7 @@
 {
     "title":    "我是title",
     "plugins":  [
-        "expandable-chapters"
+        "expandable-chapters",
+        "back-to-top-button"
     ]
 }
