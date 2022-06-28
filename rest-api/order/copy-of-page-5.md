@@ -1,7 +1,8 @@
 # Copy of Page 5
 
-{% swagger method="get" path="" baseUrl="/api/v1/trade/order" summary="" %}
-{% endswagger %}
+{% swagger method="get" %}
+{% swagger path="" baseUrl="/api/v1/trade/order" summary="" %}
+
 
 
 
@@ -41,3 +42,4 @@ string
 ```
 {% endswagger-response %}
 
+{% endswagger %}
