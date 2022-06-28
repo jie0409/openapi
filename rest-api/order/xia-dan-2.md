@@ -1,3 +1,12 @@
+{
+    "plugins": ["theme-api"],
+    "pluginsConfig": {
+        "theme-api": {
+            "theme": "dark"
+        }
+    }
+}
+
 # 下单2
 
 ## 啊大方
