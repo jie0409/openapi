@@ -1,6 +1,9 @@
 # Copy of Page 5
 
-{% swagger method="get" path="" baseUrl="/api/v1/trade/order" summary="" %}
+{% swagger method="get" path="" baseUrl="/api/v1/trade/order" summary="" -%}
+
+
+
 {% swagger-description %}
 
 {% endswagger-description %}
