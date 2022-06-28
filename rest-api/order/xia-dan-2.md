@@ -10,6 +10,7 @@
 
 >
 
+{% method %}
 
 {% sample lang="curl" %}
 
@@ -18,3 +19,5 @@ curl POST /api/v1/trade/order
 {
   order : "aaa"
 }
+
+{% endmethod %}
