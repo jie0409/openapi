@@ -10,9 +10,9 @@
 
 >
 
-{% method %}
+{% method -%}
 
-{% sample lang="curl" %}
+{% sample lang="curl" -%}
 
 curl POST /api/v1/trade/order
 
