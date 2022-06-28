@@ -19,7 +19,7 @@
 
 >
 
-{% method -%}
+{% method %}
 
 {% sample lang="curl" -%}
 
