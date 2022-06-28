@@ -2,6 +2,16 @@
 description: 下单
 ---
 
+{% swagger-parameter in="body" name="symbol" required="true" type="string" %} 交易市场 {% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="side" required="true" type="string" %} 方向：BUY or SELL {% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="type" required="true" type="string" %} 类型：LIMIT or MARKET {% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="clientOrderId" type="string" %} 客户端id，由大小写字母、数字、中横线组成，最大64位 {% endswagger-parameter %}
+
+
+
 # 下单1
 
 类型：PRIVATE
@@ -10,7 +20,13 @@ description: 下单
 
 {% swagger method="post" path="" baseUrl="/api/v1/trade/order" summary="Create a new order" %}
 {% swagger-description %}
+{% swagger-parameter in="body" name="symbol1" required="true" type="string" %} 交易市场 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="side1" required="true" type="string" %} 方向：BUY or SELL {% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="type11" required="true" type="string" %} 类型：LIMIT or MARKET {% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="clientOrderId1" type="string" %} 客户端id，由大小写字母、数字、中横线组成，最大64位 {% endswagger-parameter %}
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="symbol" required="true" type="string" %}
