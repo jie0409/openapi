@@ -1,19 +1,15 @@
-# 订单
+# ORDER
 
-{% swagger method="post" path="" baseUrl="/api/v1/trade/order" summary="下单" %}
+{% swagger method="get" path="/order" baseUrl="/api/v1/trade" summary="" %}
 {% swagger-description %}
-权限：交易
+
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="symbol" type="string" required="true" %}
-交易市场
+{% swagger-parameter in="body" %}
+
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="side" type="string" required="true" %}
- BUY or SELL
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="type" type="string" %}
+{% swagger-parameter in="body" name="222" %}
 
 {% endswagger-parameter %}
 {% endswagger %}
