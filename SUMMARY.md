@@ -26,9 +26,9 @@
 ## Websocket
 
 * [基本信息](websocket/ji-ben-xin-xi.md)
-* [行情推送](websocket/hang-qing-tui-song/README.md)
-  * [成交](websocket/hang-qing-tui-song/cheng-jiao.md)
-  * [行情深度](websocket/hang-qing-tui-song/hang-qing-shen-du.md)
-* [账户信息](websocket/zhang-hu-xin-xi/README.md)
-  * [订单](websocket/zhang-hu-xin-xi/ding-dan.md)
-  * [成交](websocket/zhang-hu-xin-xi/cheng-jiao.md)
+* [公有行情推送](websocket/gong-you-hang-qing-tui-song/README.md)
+  * [成交](websocket/gong-you-hang-qing-tui-song/cheng-jiao.md)
+  * [行情深度](websocket/gong-you-hang-qing-tui-song/hang-qing-shen-du.md)
+* [私有信息](websocket/si-you-xin-xi/README.md)
+  * [订单](websocket/si-you-xin-xi/ding-dan.md)
+  * [成交](websocket/si-you-xin-xi/cheng-jiao.md)
