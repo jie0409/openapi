@@ -39,7 +39,7 @@ POST /api/v1/trade/order
 * TRADE\_NOT\_ENOUGH\_MONEY 余额不足
 * TRADE\_PRICE\_FILTER\_DENIED price非法
 * TRADE\_SIZE\_FILTER\_DENIED size非法
-* TRADE\_AMOUNT\_FILTER\_DENIED 市价卖金额非法 或 price \* size 非法
+* TRADE\_AMOUNT\_FILTER\_DENIED 市价买金额非法 或 price \* size 非法
 * TRADE\_REPEAT\_CLIENT\_ORDER\_ID 重复的client\_order\_id，至少在6小时内判定去重
 * TRADE\_OPEN\_ORDER\_EXCEED\_LIMIT open orders 超过最大限制
 * TRADE\_SYMBOL\_MAINTAIN 品种维护
@@ -55,7 +55,7 @@ POST https://{site}/api/v1/trade/order
   "type":           "LIMIT",
   "size":           "0.1",
   "price":          "30000",
-  "timeInForce":    "IOC"
+  "IOC":            true
 }
 ```
 
