@@ -2,8 +2,6 @@
 
 权限： 读取
 
-权重： 10
-
 请求路径：
 
 ```
@@ -20,19 +18,19 @@ GET /api/v1/trade/fillsByOrderId
 
 返回参数：
 
-| **字段名** |           | **类型** | **描述**        |
-| ------- | --------- | ------ | ------------- |
-| fills   |           | array  | 成交集合，时间倒序排列   |
-|         | id        | number | 成交id          |
-|         | orderId   | number | 订单号           |
-|         | symbol    | string | 交易市场          |
-|         | side      | string | BUY 或 SELL    |
-|         | role      | string | TAKER 或 MAKER |
-|         | price     | string | 价格            |
-|         | size      | string | 订单数量          |
-|         | fee       | string | 手续费           |
-|         | feeCoin   | string | 手续费币种         |
-|         | timestamp | number | 时间戳，毫秒，时间倒序   |
+| **字段名** |           | **类型** | **描述**         |
+| ------- | --------- | ------ | -------------- |
+| fills   |           | array  | 时间倒序排列         |
+|         | id        | number | 成交id           |
+|         | orderId   | number | 订单号            |
+|         | symbol    | string | 交易市场           |
+|         | side      | string | BUY or SELL    |
+|         | role      | string | TAKER or MAKER |
+|         | price     | string | 价格             |
+|         | size      | string | 订单数量           |
+|         | fee       | string | 手续费            |
+|         | feeCoin   | string | 手续费币种          |
+|         | timestamp | number | 时间戳，毫秒，时间倒序    |
 
 错误码：
 

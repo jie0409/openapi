@@ -30,9 +30,9 @@
     "filledSize": "0.0500",
     "filledAmount": "1500.00",
     "fee":  "0.15",
-    "feeCoin": "USDT",
-    "IOC":  false,
-    "status": "OPEN",
+    "timeInForce":  "GTC",
+    "postOnly": false,
+    "state": "OPEN",
     "clientOrderId":  "9e3d93d6-e9a4-465a-a39c-2e48568fe194"
     "createTime": 1566676132311,
     "updateTime": 1566676132311

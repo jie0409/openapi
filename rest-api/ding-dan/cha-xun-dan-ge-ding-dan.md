@@ -2,8 +2,6 @@
 
 权限： 读取
 
-权重： 1
-
 请求路径：
 
 ```
@@ -23,8 +21,8 @@ GET /api/v1/trade/order
 | ------------- | ------- | ---------------- |
 | orderId       | number  | 订单号              |
 | symbol        | string  | 交易市场             |
-| type          | string  | LIMIT 或 MARKET   |
-| side          | string  | BUY 或 SELL       |
+| type          | string  | LIMIT or MARKET  |
+| side          | string  | BUY or SELL      |
 | price         | string  | 价格               |
 | size          | string  | 订单数量             |
 | amount        | string  | 市价买单金额           |
@@ -32,18 +30,18 @@ GET /api/v1/trade/order
 | filledAmount  | string  | 已成交金额            |
 | fee           | string  | 手续费              |
 | feeCoin       | string  | 手续费币种            |
-| status        | string  | OPEN 或 CLOSED    |
+| status        | string  | OPEN / CLOSED    |
 | IOC           | boolean | IOC              |
 | clientOrderId | string  | 客户端订单号           |
-| source        | string  | 来源， MANUAL 或 API |
+| source        | string  | 来源， MANUAL / API |
 | createTime    | number  | 创建订单时的时间戳，毫秒     |
 | updateTime    | number  | 最近一次更新时的时间戳，毫秒   |
 
 错误码：
 
-* TRADE\_ORDER\_NOT\_FOUND    未查询到订单
-* TRADE\_INVALID\_SYMBOL    无效品种
-* TRADE\_PARAMETER\_ERROR   参数错误
+* TRADE\_ORDER\_NOT\_FOUND 未查询到订单
+* TRADE\_INVALID\_SYMBOL 无效品种
+* TRADE\_PARAMETER\_ERROR 参数错误
 
 请求示例：
 
