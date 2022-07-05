@@ -2,6 +2,8 @@
 
 权限： 读取
 
+权重： 10
+
 请求路径：
 
 ```
@@ -19,26 +21,26 @@ GET /api/v1/trade/allOrders
 
 返回参数：
 
-| **字段名** |               | **类型**  | **描述**               |
-| ------- | ------------- | ------- | -------------------- |
-| orders  |               | array   | createTime 时间倒序排列    |
-|         | orderId       | number  | 订单号                  |
-|         | symbol        | string  | 交易市场                 |
-|         | orderType     | string  | LIMIT or MARKET      |
-|         | side          | string  | BUY or SELL          |
-|         | price         | string  | 价格                   |
-|         | size          | string  | 订单数量                 |
-|         | amount        | string  | 市价买单额                |
-|         | filledSize    | string  | 已成交数量                |
-|         | filledAmount  | string  | 已成交金额                |
-|         | fee           | string  | 手续费                  |
-|         | feeCoin       | string  | 手续费币种                |
-|         | status        | string  | OPEN / CLOSED        |
-|         | IOC           | boolean | 是否IOC                |
-|         | clientOrderId | string  | 客户端订单号               |
-|         | source        | string  | 来源， MANUAL / OPENAPI |
-|         | createTime    | number  | 创建订单时的时间戳，毫秒，时间倒序    |
-|         | updateTime    | number  | 最近一次更新时的时间戳，毫秒       |
+| **字段名** |               | **类型**  | **描述**                 |
+| ------- | ------------- | ------- | ---------------------- |
+| orders  |               | array   | 订单集合，createTime 时间倒序排列 |
+|         | orderId       | number  | 订单号                    |
+|         | symbol        | string  | 交易市场                   |
+|         | orderType     | string  | LIMIT 或 MARKET         |
+|         | side          | string  | BUY 或 SELL             |
+|         | price         | string  | 价格                     |
+|         | size          | string  | 订单数量                   |
+|         | amount        | string  | 市价买单额                  |
+|         | filledSize    | string  | 已成交数量                  |
+|         | filledAmount  | string  | 已成交金额                  |
+|         | fee           | string  | 手续费                    |
+|         | feeCoin       | string  | 手续费币种                  |
+|         | status        | string  | OPEN 或 CLOSED          |
+|         | IOC           | boolean | 是否IOC                  |
+|         | clientOrderId | string  | 客户端订单号                 |
+|         | source        | string  | 来源， MANUAL 或 API       |
+|         | createTime    | number  | 创建订单时的时间戳，毫秒           |
+|         | updateTime    | number  | 最近一次更新时的时间戳，毫秒         |
 
 错误码：
 

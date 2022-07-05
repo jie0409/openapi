@@ -7,7 +7,7 @@
 ```
 {
   "op": "SUBSCRIBE",  //订阅
-  "topic":  "TRADES",   //深度
+  "topic":  "TRADE",   //深度
   "symbol": "BTC_USDT"  // 品种
 }
 ```
@@ -16,7 +16,7 @@
 
 ```
 {
-  "topic": "TRADES",
+  "topic": "TRADE",
   "symbol": "BTC_USDT"
   "data": [
     {
