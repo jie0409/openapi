@@ -7,16 +7,16 @@
 ```
 {
   "op": "SUBSCRIBE",  //订阅
-  "topic":  "TRADES",   //深度
+  "topic":  "TRADE",   //成交
   "symbol": "BTC_USDT"  // 品种
 }
 ```
 
-推送数据(每次最多100条)
+推送数据(每次最多100条，时间倒序排列)
 
 ```
 {
-  "topic": "TRADES",
+  "topic": "TRADE",
   "symbol": "BTC_USDT"
   "data": [
     {
@@ -24,7 +24,7 @@
       "tradeId": "600848671",
       "price": "7962.62",
       "size": "0.0122",
-      "direction": "BUY",
+      "side": "BUY",
       "timestamp": 1566691672311
     },
     {
@@ -32,7 +32,7 @@
       "tradeId": "600848672",
       "price": "7962.62",
       "size": "0.0322",
-      "direction": "BUY",
+      "side": "BUY",
       "timestamp": 1566691672311
     },
     {
@@ -40,7 +40,7 @@
       "tradeId": "600848673",
       "price": "7962.62",
       "size": "0.0132",
-      "direction": "BUY",
+      "side": "BUY",
       "timestamp": 1566691672311
     }
   ]

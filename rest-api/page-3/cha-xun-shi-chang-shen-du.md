@@ -17,11 +17,11 @@ GET /api/v1/market/depth
 
 返回参数：
 
-| **字段名**    | **类型** | **描述**                 |
-| ---------- | ------ | ---------------------- |
-| bids       | array  | 买单集合{price, size}，价格降序 |
-| asks       | array  | 卖单集合{price, size}，价格升序 |
-| updateTime | number | 更新时间                   |
+| **字段名**    | **类型** | **描述**                  |
+| ---------- | ------ | ----------------------- |
+| bids       | array  | 买单集合\[price, size]，价格降序 |
+| asks       | array  | 卖单集合\[price, size]，价格升序 |
+| updateTime | number | 更新时间，毫秒                 |
 
 错误码：
 

@@ -17,17 +17,17 @@ GET /api/v1/market/trades
 
 返回参数：
 
-| **字段名** |           | **类型** | **描述**      |
-| ------- | --------- | ------ | ----------- |
-| trades  |           | array  | 最新实时成交集合    |
-|         | symbol    | string | 交易市场        |
-|         | tradeId   | string | 品种          |
-|         | price     | string | 最新买价        |
-|         | size      | string | 最新卖家        |
-|         | side      | string | BUY or SELL |
-|         | timestamp | string | 时间戳，倒序排列，毫秒 |
+| **字段名** |           | **类型** | **描述**          |
+| ------- | --------- | ------ | --------------- |
+| trades  |           | array  | 最新实时成交集合，时间倒序排列 |
+|         | symbol    | string | 交易市场            |
+|         | tradeId   | string | 成交ID            |
+|         | price     | string | 成交价格            |
+|         | size      | string | 成交量             |
+|         | side      | string | BUY 或 SELL      |
+|         | timestamp | string | 成交时间戳，毫秒        |
 
-注意: 查询到的结果为主动成交的记录，即taker 方产生的trades
+注意: 查询到的成交记录，买卖方向为主动成交方向（即：Taker方的买卖方向）
 
 错误码：
 
