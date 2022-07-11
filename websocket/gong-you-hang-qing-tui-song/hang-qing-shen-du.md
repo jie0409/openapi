@@ -8,7 +8,7 @@
 {
   "op": "SUBSCRIBE",  //订阅
   "topic":  "DEPTH",   //深度
-  "symbol": "BTC_USDT",  // 品种
+  "symbol": "BTC_USDT",  //品种
   "limit":  20   //行情档位，1 - 100
 }
 ```

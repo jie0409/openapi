@@ -76,3 +76,11 @@ wss://api.pionex.com/ws?key=xxx-xx-xx&time=1566691672311&signature=4F65x5A2bLyMW
 ```
 {"op": "CLOSE", "timestamp": 1566691672311}
 ```
+
+### 错误码
+
+TRADE\_INVALID\_OP
+
+TRADE\_INVALID\_TOPIC
+
+TRADE\_INVALID\_SYMBOL

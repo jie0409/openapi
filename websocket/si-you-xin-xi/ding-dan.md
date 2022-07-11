@@ -10,7 +10,7 @@
 {
   "op": "SUBSCRIBE",  //订阅
   "topic":  "ORDER", //订单
-  "symbol": "BTC_USDT"  // 品种
+  "symbol": "BTC_USDT"  //品种
 }
 ```
 

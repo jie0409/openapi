@@ -2,6 +2,8 @@
 
 权限： 交易
 
+权重： 1
+
 请求路径：
 
 ```
@@ -19,10 +21,9 @@ DELETE /api/v1/trade/order
 
 错误码：
 
-* TRADE\_INVALID\_SYMBOL 无效品种
-* TRADE\_PARAMETER\_ERROR 参数错误
-* TRADE\_OPERATION\_DENIED 禁止操作
-* TRADE\_SYMBOL\_MAINTAIN 品种维护
+* TRADE\_INVALID\_SYMBOL    无效品种
+* TRADE\_PARAMETER\_ERROR    参数错误
+* TRADE\_OPERATION\_DENIED    禁止操作
 
 请求示例：
 
