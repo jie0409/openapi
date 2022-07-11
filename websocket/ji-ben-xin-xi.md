@@ -29,6 +29,68 @@ wss://api.pionex.com/ws?key=xxx-xx-xx&time=1566691672311&signature=4F65x5A2bLyMW
 7. 使用SecretKey对拼接后的结果进行HMAC SHA256运算，并将将结果转换为16进制
 8. 将得到的结果赋给signature并添加到Header参数后发出请求
 
+示例：
+
+用户的私钥和请求时间为：
+
+```
+key:  OElNn5D_Frnf5MR0ChjYdG7PunK0AOgHTvevwzWS
+secret： NFqv4MB3hB0SOiEsJNDP9e0jDdKPWbDqS_Z1dbU4
+
+timestamp： 1655896754515
+```
+
+建立私有数据WebSocket 链接的原始请求是：
+
+```
+WSS://api.pionex.com/ws
+```
+
+第一步，获取当前时间戳
+
+```
+timestamp=1655896754515
+```
+
+第二步，将 query 参数表示为键值对形式：key=value
+
+```
+key=OElNn5D_Frnf5MR0ChjYdG7PunK0AOgHTvevwzWS
+timestamp=1655896754515
+```
+
+第三步，将键值对按key的ASCII码升序排序，并使用 & 拼接
+
+```
+key=OElNn5D_Frnf5MR0ChjYdG7PunK0AOgHTvevwzWS&timestamp=1655896754515
+```
+
+第四步，将结果拼接到请求 path 后面，生成 path\_url
+
+```
+/ws?key=OElNn5D_Frnf5MR0ChjYdG7PunK0AOgHTvevwzWS&timestamp=1655896754515
+```
+
+第五步，将上述结果后面拼接字符串 websocket\_auth
+
+```
+/ws?key=OElNn5D_Frnf5MR0ChjYdG7PunK0AOgHTvevwzWS&timestamp=1655896754515websocket_auth
+```
+
+第六步，使用SecretKey对拼接后的结果进行HMAC SHA256运算，并将将结果转换为16进制
+
+```
+3e901247350e744353f4a7a479fd67181184a627b119352ec1b7a432925e772c
+```
+
+第七步，将得到的结果赋给signature并添加到query参数的后面发起建立链接请求
+
+```
+wss://api.pionex.com/ws?key=OElNn5D_Frnf5MR0ChjYdG7PunK0AOgHTvevwzWS&timestamp=1655896754515websocket_auth&signature=3e901247350e744353f4a7a479fd67181184a627b119352ec1b7a432925e772c
+```
+
+
+
 ### **订阅**
 
 发送JSON请求来进行订阅

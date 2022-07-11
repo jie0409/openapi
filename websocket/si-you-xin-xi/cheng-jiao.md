@@ -8,7 +8,7 @@
 {
   "op": "SUBSCRIBE",  //订阅
   "topic":  "FILL",   //成交
-  "symbol": "BTC_USDT"  //品种
+  "symbol": "BTC_USDT"  // 品种
 }
 ```
 
