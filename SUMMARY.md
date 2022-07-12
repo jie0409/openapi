@@ -7,6 +7,8 @@
 * [基本信息](rest-api/ji-ben-xin-xi/README.md)
   * [API 基本信息](rest-api/page-2.md)
   * [签名认证](rest-api/ji-ben-xin-xi/qian-ming-ren-zheng.md)
+* [通用](rest-api/tong-yong/README.md)
+  * [获取交易市场](rest-api/tong-yong/huo-qu-jiao-yi-shi-chang.md)
 * [账户信息](rest-api/zhang-hu-xin-xi/README.md)
   * [查询余额](rest-api/zhang-hu-xin-xi/cha-xun-yu-e.md)
 * [订单](rest-api/ding-dan/README.md)

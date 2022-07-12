@@ -127,7 +127,7 @@ wss://api.pionex.com/ws?key=OElNn5D_Frnf5MR0ChjYdG7PunK0AOgHTvevwzWS&timestamp=1
 {"op": "PING", "timestamp": 1566691672311}
 ```
 
-客户端收到服务器心跳后，回复PONG消息，PONG消息的时间戳可以与PING消息不一致，也不必须要一一对应，以文本格式回复（不需要压缩），消息格式为：
+客户端收到服务器心跳后，回复PONG消息，PONG消息的时间戳可以与PING消息不一致，也不必须要一一对应，以文本格式回复（不需要压缩），消息格式如下，其中timestamp 为当前的时间戳，单位毫秒
 
 ```
 {"op": "PONG", "timestamp": 1566691672311}
@@ -141,7 +141,7 @@ wss://api.pionex.com/ws?key=OElNn5D_Frnf5MR0ChjYdG7PunK0AOgHTvevwzWS&timestamp=1
 
 ### 错误码
 
-TRADE\_INVALID\_OP
+\_INVALID\_OP
 
 TRADE\_INVALID\_TOPIC
 
